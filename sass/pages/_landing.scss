@@ -1,0 +1,44 @@
+#landing {
+    padding-top: 80px; //becasue navbar fixed height 80px 
+    background-image: url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    color: $white;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    h1 {
+        font-size: 65px;
+    }
+}
+
+.intro {
+    margin: 0% 0 14% 0;
+}
+
+.toMyProjectsWraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow {
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    animation-delay: 500ms;
+}
+
+@keyframes arrow {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 25px;
+    }
+}

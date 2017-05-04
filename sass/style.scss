@@ -1,0 +1,54 @@
+    @import "variables/var";
+    html {
+        font-size: 62.5%;
+        height: 100%;
+    }
+    
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+    
+    section {
+        height: 100%;
+    }
+    
+    .customButton {
+        padding: 11px;
+        text-transform: uppercase;
+        border: 3px solid white;
+        border-radius: 5px;
+        color: $white;
+    }
+    
+    // rest bootsrap a tag rules 
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    
+    .subtext {
+        color: $grey;
+    }
+    
+    // rest
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    @import "pages/navbar";
+    @import "pages/landing";
+    @import "pages/projects";
+    @import "pages/contact";

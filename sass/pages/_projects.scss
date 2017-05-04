@@ -1,0 +1,42 @@
+#projects {
+    padding-top: 100px; //becasue navbar fixed height 80px
+    .projects-header {
+        margin-bottom: 50px;
+        h1 {
+            margin: 0;
+            // font-size: 1.2rem;
+        }
+        h3 {
+            margin-top: 7px;
+        }
+    }
+}
+
+.ih-item.square {
+    position: relative;
+    height: 250px;
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 5%;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.ih-item.square.effect6 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 0;
+    background: none;
+    margin: 30px 0 0 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    width: 30px;
+}
+
+// .ih-item

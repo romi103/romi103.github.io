@@ -1,0 +1,55 @@
+.navigation {
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    transition: background-color 700ms;
+}
+
+.navigation-black {
+    background: $black;
+    transition: background 700ms;
+}
+
+.navigation-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+#logo-photo {
+    height: 60px;
+    transition: height 200ms;
+    &:hover {
+        transition: transform 200ms;
+        animation-name: logo;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-iteration-count: 4;
+        // animation-delay: 500ms;
+    }
+}
+
+#navgation-hamburger {
+    .line {
+        margin: 8px 0;
+        display: block;
+        height: 5px;
+        width: 38px;
+        background-color: #fefefe;
+        border-radius: 2px;
+    }
+}
+
+@keyframes logo {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
