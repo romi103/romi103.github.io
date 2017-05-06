@@ -61,7 +61,7 @@
 
     <!--<section>-->
     <div class="container projects" id="projects">
-        <div class="projects-header">
+        <div class="section-header">
             <h1>My Projects</h1>
             <h3 class="subtext">Take a look at my projects</h3>
         </div>
@@ -162,40 +162,44 @@
     <!--</section>
     <section>-->
     <div class="container-fluid" id="contact">
-        <div id="blur">
-            <div class="col-md-12">
-                <div class="row main">
-                    <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-12">
+            <div class="row main">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="section-header">
                         <h1>Contact</h1>
-                        <div id="alert_box" class="">
-                            <p></p>
+                    </div>
+                    <div id="alert_box" class="">
+                        <p></p>
+                    </div>
+                    <form method="post" action="https://email-send.herokuapp.com/" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="custom-input" name="email" id="inputEmail" placeholder="Email">
                         </div>
-                        <form method="post" action="http://romanlorent.com/email_engine/email.php" id="contactForm">
-                            <div class="form-group">
-                                <input type="text" class="custom-input" name="email" id="inputEmail" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="custom-input" id="inputName" placeholder="Name" name="name">
-                            </div>
-                            <textarea class="form-group custom-textarea" rows="10" placeholder="Your message" name="message"></textarea>
-                            <input type="button" class="customButton" id="button" value="Send">
-                        </form>
-                    </div>
-                    <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="social">
-                        <p>romanlorent@gmail.com</p>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="custom-input" id="inputName" placeholder="Name" name="name">
+                        </div>
+                        <textarea class="form-group custom-textarea" rows="10" placeholder="Your message" name="message"></textarea>
+                        <button class="center-block send-button" id="button">SEND <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
                 </div>
-                <footer>
-                    <div class="col-xs-6 col-xs-offset-3">
-                        <p>Copyright<i class="fa fa-copyright"></i> Roman Lorent 2015</p>
-                    </div>
-                </footer>
             </div>
         </div>
     </div>
+    <div class="footer-wraper">
+        <div class="container footer">
+            <div class="col-md-4 footer-box" id="copy-right">
+                <p>Copyright<i class="fa fa-copyright"></i> Roman Lorent 2015</p>
+            </div>
+            <div class="col-md-8 footer-box" id="social">
+                <a href="#"><i class="fa fa-github fa-3x"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
     <!--<script>
         // onload set section height 
         window.onload = function() {

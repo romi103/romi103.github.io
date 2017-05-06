@@ -1,6 +1,5 @@
 html {
-  font-size: 62.5%;
-  height: 100%; }
+  font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
@@ -8,17 +7,22 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600; }
+  font-weight: 500; }
 
 section {
   height: 100%; }
 
-.customButton {
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.customButton, .send-button {
   padding: 11px;
   text-transform: uppercase;
   border: 3px solid white;
   border-radius: 5px;
-  color: #fff; }
+  color: #fff;
+  background-color: transparent; }
 
 a {
   color: inherit;
@@ -33,6 +37,13 @@ a {
 .container-fluid {
   padding-right: 0;
   padding-left: 0; }
+
+.section-header {
+  margin-bottom: 50px; }
+  .section-header h1 {
+    margin: 0; }
+  .section-header h3 {
+    margin-top: 7px; }
 
 .navigation {
   height: 80px;
@@ -112,12 +123,6 @@ a {
     top: 25px; } }
 #projects {
   padding-top: 100px; }
-  #projects .projects-header {
-    margin-bottom: 50px; }
-    #projects .projects-header h1 {
-      margin: 0; }
-    #projects .projects-header h3 {
-      margin-top: 7px; }
 
 .ih-item.square {
   position: relative;
@@ -144,22 +149,43 @@ a {
   width: 30px; }
 
 #contact {
+  color: #fff;
+  padding-top: 80px;
   background-color: #222222;
-  background-image: url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
 .custom-input, .custom-textarea {
   width: 100%;
-  border: 2px inset #222222;
   height: 60px;
+  border: 1px inset #b4b4b4;
   border-radius: 5px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  box-shadow: inset 3px 3px 3px 0px #b4b4b4; }
 
 .custom-textarea {
-  height: 120px; }
+  height: 120px;
+  padding-top: 12px; }
 
 .form-group {
   margin-bottom: 20px; }
+
+.footer-wraper {
+  display: block;
+  background-color: #222222;
+  color: #fff;
+  height: 30vh; }
+  .footer-wraper .footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+#social {
+  text-align: right; }
+  #social i {
+    margin: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */

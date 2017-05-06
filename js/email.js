@@ -32,7 +32,7 @@
         }
 
         if (!error) {
-            $.post("http://romanlorent.com/email_engine/email.php", $("#contactForm").serialize());
+            $.post("https://email-send.herokuapp.com/", $("#contactForm").serialize());
             $("#alert_box").addClass('text-success');
             $("#alert_box").html(" <i class='fa fa-check'></i>Thank you for your message");
         } else {

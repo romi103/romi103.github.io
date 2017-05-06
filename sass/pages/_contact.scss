@@ -1,24 +1,32 @@
 #contact {
+    color: $white;
+    padding-top: 80px;
     background-color: $black;
-    background-image: url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .custom-input {
     width: 100%;
-    border: 2px inset $black;
     height: 60px;
+    border: 1px inset $grey;
     border-radius: 5px;
     padding-left: 10px;
-    // background: rgba(0, 0, 0, 0.8);
+    box-shadow: inset 3px 3px 3px 0px $grey;
 }
 
 .custom-textarea {
     @extend .custom-input;
     height: 120px;
+    padding-top: 12px;
 }
 
 .form-group {
     margin-bottom: 20px;
+}
+
+.send-button {
+    @extend .customButton;
 }

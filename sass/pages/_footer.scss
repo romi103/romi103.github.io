@@ -1,0 +1,21 @@
+.footer-wraper {
+    display: block;
+    background-color: $black;
+    color: $white;
+    height: 30vh;
+    .footer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+#copy-right {}
+
+#social {
+    text-align: right;
+    i {
+        margin: 0 10px;
+    }
+}
