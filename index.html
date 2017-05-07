@@ -15,9 +15,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,15 +32,28 @@
                 <a href="#"><img src="public/DSCN3677_superlowres_gray.jpg" class="img-responsive img-circle" id="logo-photo"></a>
             </div>
             <div id="navgation-hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <div class="container-fluid" id="landing">
+    <div class="side-navbar">
+        <ul>
+            <li><a href="#landing">HOME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact-wraper">CONTACT</a></li>
+        </ul>
+        <div class="side-navbar-info">
+            <h1><i class="fa fa-code" aria-hidden="true"></i></h1>
+            <p>My set of skills include HTML5, CSS3 and JavaScript along with jQuery library and Bootstrap framework. Additianlly on back end I work with Express, a Node.js web application framework.</p>
+        </div>
 
+
+    </div>
+
+    <div class="container-fluid" id="landing">
         <div class="row intro">
             <div class="col-md-12">
                 <h1>test test test tes t</h1>
@@ -51,29 +61,23 @@
         </div>
         <div class="row">
             <div class="col-md-12 toMyProjectsWraper">
-                <a href="#projects" id="toMyProjects">
+                <a href="#projects" id="toMyProjects" onclick="scrollToSection(e)">
                     <p class="customButton">See my projects</p>
                     <p><i class="fa fa-angle-down fa-5x" id="arrow" aria-hidden="true"></i></p>
                 </a>
             </div>
         </div>
     </div>
-
-    <!--<section>-->
-    <div class="container projects" id="projects">
+    <div class="container" id="projects">
         <div class="section-header">
             <h1>My Projects</h1>
             <h3 class="subtext">Take a look at my projects</h3>
         </div>
         <div class="col-md-12">
             <div class="row">
-
                 <div class="row">
                     <div id="portfolio" class="col-md-12">
-                        <!-- firstrow-->
                         <div class="row">
-
-                            <!-- calculator -->
                             <div class=" col-md-4">
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="calculator/index.html">
@@ -85,7 +89,6 @@
                                 </div>
                             </div>
                             <div class=" col-md-4">
-                                <!-- pomodoro -->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="pomodore/index.html">
                                         <div class="img"><img src="images/pomodoro.jpg" alt="img"></div>
@@ -96,7 +99,6 @@
                                 </div>
                             </div>
                             <div class=" col-md-4">
-                                <!-- wiki-->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="wiki/index.html">
                                         <div class="img"><img src="images/wiki.JPG" alt="img"></div>
@@ -106,9 +108,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- third  row -->
                             <div class=" col-md-4">
-                                <!-- tic tac -->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="tictactoe/index.html">
                                         <div class="img"><img src="images/tictao.jpg" alt="img"></div>
@@ -118,9 +118,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- forth  row -->
                             <div class=" col-md-4">
-                                <!-- camper news-->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="simon/index.html">
                                         <div class="img"><img src="images/simon.jpg" alt="img"></div>
@@ -131,7 +129,6 @@
                                 </div>
                             </div>
                             <div class=" col-md-4">
-                                <!-- voting app-->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="https://voting-application-fcc.herokuapp.com/">
                                         <div class="img"><img src="images/votingapp.jpg" alt="img"></div>
@@ -141,9 +138,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <!--              fith row              -->
                             <div class=" col-md-4">
-                                <!-- voting app-->
                                 <div class="ih-item square effect6 from_top_and_bottom center-block">
                                     <a href="https://night-life-app.herokuapp.com/">
                                         <div class="img"><img src="images/night-life-app.png" alt="img"></div>
@@ -159,19 +154,17 @@
             </div>
         </div>
     </div>
-    <!--</section>
-    <section>-->
-    <div class="container-fluid" id="contact">
+    <div class="container-fluid" id="contact-wraper">
         <div class="col-md-12">
             <div class="row main">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-6 col-md-offset-3 contact">
                     <div class="section-header">
                         <h1>Contact</h1>
                     </div>
-                    <div id="alert_box" class="">
+                    <div id="alert_box" class="alert-danger">
                         <p></p>
                     </div>
-                    <form method="post" action="https://email-send.herokuapp.com/" id="contactForm">
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" class="custom-input" name="email" id="inputEmail" placeholder="Email">
                         </div>
@@ -191,24 +184,12 @@
                 <p>Copyright<i class="fa fa-copyright"></i> Roman Lorent 2015</p>
             </div>
             <div class="col-md-8 footer-box" id="social">
-                <a href="#"><i class="fa fa-github fa-3x"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                <a href="https://github.com/romi103" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/roman-lorent-80b70359/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
             </div>
 
         </div>
     </div>
-
-
-
-    <!--<script>
-        // onload set section height 
-        window.onload = function() {
-
-        }
-    </script>-->
-    <!--</section>-->
-
-    <!-- /container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

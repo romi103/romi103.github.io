@@ -5,37 +5,52 @@
         return pattern.test(emailAddress);
     };
 
+    // ******** contact form validation **********
+
+    //removing alert class
+    $(".custom-input").change(function() {
+        var $input = $(this);
+        var hasAlert = $input.hasClass("alert-form");
+
+        if (hasAlert) {
+            $input.removeClass("alert-form");
+        }
+    });
 
     //validation and sending the contact form
-    $("#button").click(function(event) {
 
+    $("#button").click(function(event) {
+        event.preventDefault();
+        var $button = $(this);
         var email = $("#inputEmail");
         var name = $("#inputName");
         var emailValue = email.val();
         var nameValue = name.val();
-        var error = "";
+        var error;
 
         $("#alert_box").css("display", "block");
 
         if (!isValidEmailAddress(emailValue) || !emailValue) {
-            email.addClass("alert-danger");
-            error = error + "<i class='fa fa-exclamation-triangle'></i>Invalid email address!<br />";
+            email.addClass("alert-form");
+            error = true
         } else {
-            email.removeClass("alert-danger");
+            email.removeClass("alert-form");
         }
 
         if (!nameValue) {
-            name.addClass("alert-danger");
-            error = error + "<i class='fa fa-exclamation-triangle'></i>Please type your name!";
+            name.addClass("alert-form");
+            error = true;
         } else {
-            name.removeClass("alert-danger");
+            name.removeClass("alert-form");
         }
 
         if (!error) {
-            $.post("https://email-send.herokuapp.com/", $("#contactForm").serialize());
-            $("#alert_box").addClass('text-success');
-            $("#alert_box").html(" <i class='fa fa-check'></i>Thank you for your message");
-        } else {
-            $("#alert_box").html(error);
+            $button.find($(".fa")).removeClass("fa-paper-plane").addClass("fa-spinner fa-spin");
+
+            $.post("https://email-send.herokuapp.com/", $("#contactForm").serialize()).done(function() {
+                $button.find($(".fa")).removeClass("fa-spinner fa-spin").addClass("fa-check");
+            }).fail(function() {
+                $("#alert_box").html("Something went wrong! Please try again.");
+            });
         }
     });

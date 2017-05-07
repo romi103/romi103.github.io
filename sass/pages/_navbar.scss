@@ -34,17 +34,70 @@
     }
 }
 
+// hamburger icon side navbar hidden
 #navgation-hamburger {
-    .line {
-        margin: 8px 0;
+    position: relative;
+    width: 50px;
+    height: 35px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    span {
         display: block;
-        height: 5px;
-        width: 38px;
+        position: absolute;
+        height: 7px;
+        width: 100%;
         background-color: #fefefe;
         border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 18px;
+        }
+        &:nth-child(3) {
+            top: 36px;
+        }
     }
 }
 
+// hamburger icon side navbar visible, the open class is added by JavaScript
+#navgation-hamburger.open {
+    @extend #navgation-hamburger;
+    span {
+        &:nth-child(1) {
+            top: 18px;
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+            transform: rotate(135deg);
+        }
+        &:nth-child(3) {
+            top: 18px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// .open {
+//     span:nth-child(1) {
+//         top: 18px;
+//         transform: rotate(135deg);
+//     }
+// }
+// .line {
+//     margin: 8px 0;
+//     display: block;
+//     height: 5px;
+//     width: 38px;
+//     background-color: #fefefe;
+//     border-radius: 2px;
+// }
 @keyframes logo {
     from {
         transform: scale(1, 1);

@@ -1,4 +1,5 @@
     @import "variables/var";
+    @import "normalize";
     html {
         font-size: 62.5%;
         // height: 100%;
@@ -6,11 +7,14 @@
     
     body {
         box-sizing: border-box;
+        position: relative;
         margin: 0;
+        margin-right: 0px;
         padding: 0;
         height: 100%;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
+        transition: 0.5s; //for side nav bar animation effect
     }
     
     section {
@@ -29,6 +33,12 @@
         border-radius: 5px;
         color: $white;
         background-color: transparent;
+        transition: background 500ms, color 500ms;
+        &:hover {
+            background: $white;
+            color: $black;
+            transition: background 500ms, color 500ms;
+        }
     }
     
     // rest bootsrap a tag rules 
@@ -71,3 +81,4 @@
     @import "pages/projects";
     @import "pages/contact";
     @import "pages/footer";
+    @import "pages/side-navbar";

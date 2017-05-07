@@ -1,8 +1,4 @@
-var toMyProjects = document.getElementById("toMyProjects");
-console.log(window);
-
-
-toMyProjects.addEventListener("click", function(event) {
+$("#toMyProjects, .side-navbar a").click(function(event) {
 
     event.preventDefault();
     var hash = this.hash;
@@ -10,11 +6,6 @@ toMyProjects.addEventListener("click", function(event) {
     $('body').animate({
         scrollTop: $(hash).offset().top
     }, 1000, 'swing');
-})
-
-
-$('#landing').scroll(function() {
-    console.log(window.scrollY);
 });
 
 window.onscroll = function() {
@@ -24,16 +15,8 @@ window.onscroll = function() {
 window.onload = function() {
     navBarColor();
     var sectionHeight = window.innerHeight + "px";
-    console.log(sectionHeight);
     var sections = document.getElementById("landing");
     sections.style.height = sectionHeight;
-    // sections[2].style.minHeight = sectionHeight;
-
-
-
-    // for (var i = 0; i < sections.length; i++) {
-    //     sections[i].style.minHeight = sectionHeight;
-    // }
 }
 
 // change color of the navbar depends on the window.scrollY property position by toggeling class navigation-black
@@ -45,3 +28,12 @@ function navBarColor() {
         $(".navigation").removeClass("navigation-black");
     }
 }
+
+// side nav bar
+$("#navgation-hamburger").click(function() {
+    $("body").toggleClass("side-navbar-active-body");
+    $(".side-navbar").toggleClass("side-navbar-active");
+    $(this).toggleClass("open");
+
+
+});

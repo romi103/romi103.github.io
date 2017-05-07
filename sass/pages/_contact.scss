@@ -1,4 +1,4 @@
-#contact {
+#contact-wraper {
     color: $white;
     padding-top: 80px;
     background-color: $black;
@@ -8,13 +8,21 @@
     background-size: cover;
 }
 
+.contact {
+    color: $black;
+}
+
 .custom-input {
+    position: relative;
+    left: 0px;
     width: 100%;
     height: 60px;
     border: 1px inset $grey;
     border-radius: 5px;
     padding-left: 10px;
+    padding-right: 10px;
     box-shadow: inset 3px 3px 3px 0px $grey;
+    transition: left 300ms;
 }
 
 .custom-textarea {
@@ -29,4 +37,33 @@
 
 .send-button {
     @extend .customButton;
+}
+
+//on adding the class element will shake
+.alert-form {
+    animation-name: shake;
+    animation-duration: 150ms;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    position: relative;
+    left: 0px;
+    transition: left 300ms;
+    border: 2px solid $red;
+    background: url("../images/warning.svg"), $light-red;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+}
+
+@keyframes shake {
+    // 0% {
+    //     left: 0px;
+    // }
+    0% {
+        left: 50px;
+    }
+    100% {
+        left: -50px;
+    }
 }
