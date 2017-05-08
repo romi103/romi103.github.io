@@ -32,12 +32,12 @@
         border: 3px solid white;
         border-radius: 5px;
         color: $white;
-        background-color: transparent;
+        background: transparent;
         transition: background 500ms, color 500ms;
         &:hover {
             background: $white;
             color: $black;
-            transition: background 500ms, color 500ms;
+            // transition: background 500ms, color 500ms;
         }
     }
     
@@ -82,3 +82,4 @@
     @import "pages/contact";
     @import "pages/footer";
     @import "pages/side-navbar";
+    @import "pages/social-icons";

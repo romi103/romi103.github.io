@@ -1,4 +1,4 @@
-$("#toMyProjects, .side-navbar a").click(function(event) {
+$("#toMyProjects, .side-navbar ul a").click(function(event) {
 
     event.preventDefault();
     var hash = this.hash;

@@ -12,14 +12,26 @@
     z-index: 1;
     ul {
         list-style: none;
+        li a {
+            line-height: 170%;
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
 .side-navbar-info {
     width: 100%;
-    padding: 5%;
-    h1 {
-        text-align: center;
+    padding: 30% 5% 5% 5%;
+    text-align: center;
+    p {
+        text-align: left;
+        margin-bottom: 22%;
+    }
+    a {
+        padding: 0 4%;
     }
 }
 
