@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "authors": [
+    "Roman Lorent <romaan.lorent@gmail.com>"
+  ],
+  "description": "Free Code Camp News Website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "jQuery#~2.1.4",
+    "handlebars": "~4.0.5"
+  }
+}

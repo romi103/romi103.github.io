@@ -21,6 +21,42 @@
         height: 100%;
     }
     
+    .fade-in {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        animation-direction: normal;
+        // transform-origin: 50% 50%;
+    }
+    
+    .fade-in-left {
+        animation-name: fade-left;
+        animation-duration: 1.5s;
+        animation-direction: normal;
+        // transform-origin: 50% 50%;
+    }
+    
+    @keyframes fade-left {
+        0% {
+            opacity: 0;
+            transform: translate(-30px, 0px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 0;
+            transform: translate(0px, -25px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
+    }
+    
     .row {
         margin-right: 0px;
         margin-left: 0px;
@@ -83,3 +119,4 @@
     @import "pages/footer";
     @import "pages/side-navbar";
     @import "pages/social-icons";
+    @import "pages/tiles";

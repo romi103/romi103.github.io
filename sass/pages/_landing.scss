@@ -16,9 +16,39 @@
 }
 
 .intro {
-    margin: 0% 0 14% 0;
+    margin: 5% 0 14% 0;
+    h1 {
+        margin: 0 0;
+    }
 }
 
+.separator {
+    border: 0;
+    height: 1px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+// .separator {
+//     // border-top: solid 2px #adac97;
+//     // // padding-top: 28px;
+//     // margin-top: -28px;
+//     span {
+//         background-color: transparent;
+//         padding: 0 20px;
+//         text-align: center;
+//     }
+// }
+// .separator+* {
+//     border-top: solid 2px #adac97;
+//     padding-top: 28px;
+//     margin-top: -28px;
+// }
+// hr {
+//     border-top: 4px double #8c8b8b;
+//     text-align: center;
+//     pos
+// }
 .toMyProjectsWraper {
     display: flex;
     align-items: center;

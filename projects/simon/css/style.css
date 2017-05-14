@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: 20px solid #202021;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+
+.button {
+  display: inline-flex;
+  width: 47.9%;
+  height: 50%;
+  margin: -4px; }
+
+.centerPanel {
+  width: 250px;
+  height: 250px;
+  border: 20px solid #202021;
+  border-radius: 50%;
+  background-color: #e0dfde;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .centerPanel p {
+    margin: 5px 0;
+    font-family: 'Special Elite', cursive;
+    font-size: 0.9em; }
+
+.onOff-panel, .strict-panel, .start-panel, .screen-panel {
+  position: absolute;
+  text-align: center; }
+
+button {
+  border-radius: 9999px;
+  width: 29px;
+  height: 29px;
+  box-shadow: 1px 2px 2px #100; }
+
+.dot {
+  background-color: #202021;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #202021;
+  border-radius: 999px;
+  margin: 0 auto 4px auto; }
+
+.dot-led {
+  background-color: #db1111; }
+
+.onOff-panel {
+  left: 20px; }
+  .onOff-panel #onOff {
+    background-color: red; }
+
+.strict-panel {
+  left: 158px;
+  width: 50px; }
+  .strict-panel #strict {
+    background-color: #CCA707; }
+
+.screen-panel {
+  top: 146px;
+  left: 92px; }
+  .screen-panel #screen {
+    text-align: center;
+    font-size: 2em;
+    color: #9F0F17;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    width: 62px;
+    height: 40px;
+    background-color: #3F1616;
+    border-radius: 6px;
+    border: 3px inset;
+    border-top-style: inset;
+    border-top-width: 3px; }
+
+.start-panel {
+  left: 94px; }
+  .start-panel #start {
+    background-color: #CCA707; }
+
+.but0 {
+  border-bottom: 17px solid #202021;
+  border-right: 17px solid #202021;
+  background-color: #00A74A; }
+
+.but1 {
+  border-bottom: 16px solid #202021;
+  border-left: 16px solid #202021;
+  background-color: #9F0F17; }
+
+.but2 {
+  border-top: 16px solid #202021;
+  border-right: 16px solid #202021;
+  background-color: #CCA707; }
+
+.but3 {
+  border-left: 16px solid #202021;
+  border-top: 16px solid #202021;
+  background-color: #094A8F; }
+
+.but0-lighter {
+  background-color: #0eff79; }
+
+.but1-lighter {
+  background-color: #eb2934; }
+
+.but2-lighter {
+  background-color: #f8d641; }
+
+.but3-lighter {
+  background-color: #0f7cef; }
+
+/*# sourceMappingURL=style.css.map */

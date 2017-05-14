@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="keywords" content="weather, current, geolocation, temperature, temp">
+	<meta name="description" content="Get weather for your loaction.">
+	<meta name="author" content="Roman Lorent">
+	<meta name="application-name" content="Local Weather App">
+    <title>Local Weather App</title>
+	<link rel="shortcut icon"  href="images/favicon.ico">
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<header>
+	  <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3" id="info">
+					<h1>Local Weather App</h1>
+					<i class="fa fa-sun-o fa-3x"></i>
+					<i class="fa fa-cloud fa-3x"></i>
+					<i class="fa fa-umbrella fa-3x"></i>
+					<i class="fa fa-map-marker fa-3x"></i>
+					<i class="fa fa-info fa-3x"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					
+					<div class="geoInfo">
+						<p></p>
+					</div>
+					
+					<div id="loader">
+						<i class="fa fa-spinner fa-pulse fa-3x"></i>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12 frame">
+							<p class="date"></p>
+							<p class="city"></p> 
+						</div>
+					</div>
+							<!-- screen -->
+					<div class="row">
+						<div class="col-md-4" id="screen">
+							<p>
+								<span class="temp"></span>
+								<img src="#" id="image img-responsive"/>	
+								<button class="converter btn btn-default">Change to °F</button>
+							</p>
+									
+							<p class="description"></p>
+						</div>
+					<!-- map -->
+						<div class="col-md-8" id="map">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>  
+	  
+	</section>
+  
+  <footer>
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-md-12">
+				<span><p>Copyright<i class="fa fa-copyright"></i> Roman Lorent 2015</p></span>
+				<span id="contact"><a href="http://www.romanlorent.com/php/index.php"><i class="fa fa-envelope"></i> Contact</a></span>
+			</div>
+		
+		</div>
+	</div>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+  </body>
+</html>

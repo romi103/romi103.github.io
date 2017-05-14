@@ -1,0 +1,19 @@
+{
+  "name": "Twitch API",
+  "description": "Twitch API application shows current status of given channel.",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Roman Lorent"
+  ],
+  "license": "MIT",
+  "homepage": "romanlorent.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

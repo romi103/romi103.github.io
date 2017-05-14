@@ -14,6 +14,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,6 +47,7 @@
         <ul>
             <li><a href="#landing">HOME</a></li>
             <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li><a href="#contact-wraper">CONTACT</a></li>
         </ul>
         <div class="side-navbar-info">
@@ -55,15 +60,23 @@
 
     </div>
 
-    <div class="container-fluid" id="landing">
+    <div class="container-fluid fade-in" id="landing">
         <div class="row intro">
+
             <div class="col-md-12">
-                <h1>test test test tes t</h1>
+                <h1>Roman Lorent</h1>
+                <h3>Front End Developer</h3>
             </div>
+
+
         </div>
+
+        <!--<hr class="separator">-->
+
+
         <div class="row">
             <div class="col-md-12 toMyProjectsWraper">
-                <a href="#projects" id="toMyProjects" onclick="scrollToSection(e)">
+                <a href="#projects" id="toMyProjects">
                     <p class="customButton">See my projects</p>
                     <p><i class="fa fa-angle-down fa-5x" id="arrow" aria-hidden="true"></i></p>
                 </a>
@@ -75,83 +88,80 @@
             <h1>My Projects</h1>
             <h3 class="subtext">Take a look at my projects</h3>
         </div>
-        <div class="col-md-12">
+        <div id="portfolio" class="col-md-12">
             <div class="row">
-                <div class="row">
-                    <div id="portfolio" class="col-md-12">
-                        <div class="row">
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="calculator/index.html">
-                                        <div class="img"><img src="images/calculator.jpg" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Calculator</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="pomodore/index.html">
-                                        <div class="img"><img src="images/pomodoro.jpg" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Pomodoro Timer</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="wiki/index.html">
-                                        <div class="img"><img src="images/wiki.JPG" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Search Wikipedia</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="tictactoe/index.html">
-                                        <div class="img"><img src="images/tictao.jpg" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Tic Tac Toe Game</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="simon/index.html">
-                                        <div class="img"><img src="images/simon.jpg" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Simon Game</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="https://voting-application-fcc.herokuapp.com/">
-                                        <div class="img"><img src="images/votingapp.jpg" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Voting App</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="ih-item square effect6 from_top_and_bottom center-block">
-                                    <a href="https://night-life-app.herokuapp.com/">
-                                        <div class="img"><img src="images/night-life-app.png" alt="img"></div>
-                                        <div class="info">
-                                            <span class="customButton">Night Life App</span>
-                                        </div>
-                                    </a>
-                                </div>
+                <div class="col-md-4">
+                    <a href="https://night-life-app.herokuapp.com/" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-one">
+                                <span class="tile-desc">Night Life App</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://react-todoapplication.herokuapp.com/" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-two">
+                                <span class="tile-desc">To Do App</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://voting-application-fcc.herokuapp.com/" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-three">
+                                <span class="tile-desc">Voting App</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://recipe-box-fcc.herokuapp.com/" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-four">
+                                <span class="tile-desc">Recipe Box</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://completepartywall.co.uk/" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-five">
+                                <span class="tile-desc">Complete Party Wall</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="projects/pomodore" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-six">
+                                <span class="tile-desc">Pomodore Timer</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="projects/tictactoe" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-seven">
+                                <span class="tile-desc">Calculator</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="projects/wiki" target="_blank">
+                        <div class="tile-wrapper center-block">
+                            <div class="tile bg-eight">
+                                <span class="tile-desc">Wiki Searcher</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -192,10 +202,7 @@
 
         </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
     <script src="js/custom.js"></script>
     <script src="js/email.js"></script>
 </body>

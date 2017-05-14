@@ -1,0 +1,26 @@
+{
+  "name": "Simon Game",
+  "authors": [
+    "Roman Lorent <romanlorent@gmail.com>"
+  ],
+  "description": "Simon Game",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "simon",
+    "game"
+  ],
+  "license": "MIT",
+  "homepage": "romanlorent.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4"
+  }
+}

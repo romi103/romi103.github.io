@@ -1,0 +1,92 @@
+
+$background: #4CAF50;
+$main-color: #212121;
+$accent-color: #F57C00;
+
+$font-size: 22px;
+body {
+    background-color: $background;
+    font-size: $font-size;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+table {
+    
+    margin: 5% auto;
+    text-align: center;
+    position: relative;
+   
+    
+}
+
+
+.modal {
+    margin-top: 10%;
+}    
+  
+
+.cell {
+  
+    height: 100px;
+    width: 100px;
+    border: 4px solid $main-color;
+    
+    font-size: 55px;
+    background-color: $background;
+}
+
+cont {
+    text-align: center;
+}
+
+#playerModal {
+    
+}
+
+#resetGame {
+    
+}
+
+.modal-content{
+        
+    
+padding: 2%;
+    text-align: center;
+        border: 3px solid black;
+    background-color: $background;
+    .symbol {
+        margin: 0 2%;
+        font-size: $font-size;
+        
+    }
+    
+}
+.btn {
+    font-size: $font-size;
+        
+    
+}
+.btn-default:hover {
+    background-color: #F57C00;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.alert {
+    border: 3px solid black;
+    background-color: $accent-color;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 9999;
+    display: none;
+}
+.grid {
+    z-index: 1;
+}
+
+

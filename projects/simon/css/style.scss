@@ -1,0 +1,174 @@
+
+$main-black: #202021;
+$but0-color: #00A74A;
+$but1-color: #9F0F17;
+$but2-color: #CCA707;
+$but3-color: #094A8F;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 20px solid $main-black;
+    border-radius: 50%;
+    
+    overflow: hidden;
+   //box-sizing: border-box;
+    position: relative
+}
+
+.button {
+    display: inline-flex;
+    width: 47.9%;
+    height: 50%;
+    
+    margin: -4px;
+    
+    //box-sizing: border-box;
+    
+}
+
+.centerPanel {
+    width: 250px;
+    height: 250px;
+    border: 20px solid $main-black;
+    border-radius: 50%;
+    background-color: #e0dfde;
+    position: absolute;
+     top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    text-align: center;
+    p {
+        margin: 5px 0;
+        font-family: 'Special Elite', cursive;
+        font-size: 0.9em;
+    }
+   
+}
+
+.onOff-panel, .strict-panel, .start-panel, .screen-panel {
+    position: absolute;
+    text-align: center;
+}
+button {
+    border-radius: 9999px;
+    width: 29px;
+    height: 29px;
+
+    box-shadow: 1px 2px 2px #100;
+}
+
+.dot {
+    
+    background-color: $main-black;
+    width:5px;
+    height: 5px;
+    border: 2px solid $main-black;
+    border-radius: 999px;
+    margin: 0 auto 4px auto;
+    
+    
+}
+.dot-led {
+            background-color: #db1111;
+
+    }
+.onOff-panel {
+            left: 20px;
+    #onOff {
+        background-color: red;
+    }
+}
+
+.strict-panel {
+        left: 158px;
+    width: 50px;
+    #strict {
+        background-color: $but2-color;
+    }
+}
+
+.screen-panel {
+    top: 146px;
+    left: 92px;
+    #screen {
+        text-align: center;
+        font-size: 2em;
+        color: $but1-color;
+         font-family: 'Roboto Mono' ,;
+        font-weight: 500;
+       width: 62px;
+    height: 40px;
+        background-color: #3F1616;
+        border-radius: 6px;
+            border: 3px inset;
+    
+    border-top-style: inset;
+    border-top-width: 3px;
+    }
+}
+
+.start-panel {
+    left: 94px;
+    #start {
+        background-color: $but2-color;
+    }
+}
+
+
+.but0 {
+    border-bottom: 17px solid $main-black;
+    border-right: 17px solid $main-black;
+    background-color: $but0-color;
+    
+    
+}
+
+
+
+
+.but1 {
+    border-bottom: 16px solid $main-black;
+    border-left: 16px solid $main-black;
+        background-color: $but1-color;
+
+    
+}
+
+.but2 {
+    border-top: 16px solid $main-black;
+    border-right: 16px solid $main-black;
+        background-color: $but2-color;
+
+    
+}
+
+.but3 {
+    
+    border-left: 16px solid $main-black;
+    border-top: 16px solid $main-black;
+        background-color: $but3-color;
+
+}
+
+.but0-lighter {
+        background-color: lighten($but0-color, 20%);
+    }
+
+.but1-lighter {
+        background-color: lighten($but1-color, 20%);
+    }
+
+.but2-lighter {
+        background-color: lighten($but2-color, 20%);
+    }
+
+.but3-lighter {
+        background-color: lighten($but3-color, 20%);
+    }
+

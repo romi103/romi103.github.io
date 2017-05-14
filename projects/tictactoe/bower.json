@@ -1,0 +1,28 @@
+{
+  "name": "tic tac toe",
+  "homepage": "https://github.com/romi103/tictac",
+  "authors": [
+    "Roman Lorent <romanlorent@gmail.com>"
+  ],
+  "description": "tic tac toe game with AI",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "ai",
+    "tic",
+    "tac",
+    "toe",
+    "game"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

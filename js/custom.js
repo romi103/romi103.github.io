@@ -8,12 +8,17 @@ $("#toMyProjects, .side-navbar ul a").click(function(event) {
     }, 1000, 'swing');
 });
 
+
+
 window.onscroll = function() {
     navBarColor();
+    addFadeinLeft();
+
 }
 
 window.onload = function() {
     navBarColor();
+    addFadeinLeft();
     var sectionHeight = window.innerHeight + "px";
     var sections = document.getElementById("landing");
     sections.style.height = sectionHeight;
@@ -29,11 +34,26 @@ function navBarColor() {
     }
 }
 
-// side nav bar
+// side nav bar functinality 
 $("#navgation-hamburger").click(function() {
-    $("body").toggleClass("side-navbar-active-body");
+    console.log("click");
+    //for smaller screens no margin created
+    if (window.innerWidth >= 650) {
+        $("body").toggleClass("side-navbar-active-body");
+    }
     $(".side-navbar").toggleClass("side-navbar-active");
     $(this).toggleClass("open");
 
 
 });
+
+function addFadeinLeft() {
+    var firstTileOffset = $(".bg-one").offset().top;
+    var windowBottomY = window.scrollY + window.innerHeight;
+
+
+    if (windowBottomY > firstTileOffset) {
+        console.log("test");
+        $(".tile").addClass("fade-in-left");
+    }
+}
