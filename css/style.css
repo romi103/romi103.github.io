@@ -717,6 +717,8 @@ a {
 
 .contact {
   color: #222222; }
+  .contact h1 {
+    color: #fff; }
 
 .custom-input, .custom-textarea {
   position: relative;
