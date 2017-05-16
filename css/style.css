@@ -708,8 +708,8 @@ a {
 #contact-wraper {
   color: #fff;
   padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #222222;
-  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../public/photo-1429051883746-afd9d56fbdaf.jpg");
   background-repeat: no-repeat;
