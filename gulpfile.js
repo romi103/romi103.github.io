@@ -20,7 +20,7 @@ gulp.task('hello', function() {
 gulp.task('sass', function() {
     return gulp.src('sass/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
