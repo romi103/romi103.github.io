@@ -2,10 +2,12 @@ $("#toMyProjects, .side-navbar ul a").click(function(event) {
 
     event.preventDefault();
     var hash = this.hash;
-
-    $('body').animate({
+    console.log($(hash).offset().top);
+    $('html, body').animate({
         scrollTop: $(hash).offset().top
     }, 1000, 'swing');
+
+    return false;
 });
 
 
