@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="refresh" content="3">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Roman Lorent</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <header class="navigation">
+        <nav class="navigation-nav">
+            <div>
+                <a href="/"><img src="public/DSCN3677_superlowres_gray.jpg" class="img-responsive img-circle" id="logo-photo"></a>
+            </div>
+            <div id="navgation-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="side-navbar">
+
+        <div class="side-navbar-info">
+            <h1><i class="fa fa-code" aria-hidden="true"></i></h1>
+            <p>My set of skills include HTML5, CSS3 and JavaScript along with jQuery library and Bootstrap framework. Additianlly on back end I work with Express, a Node.js web application framework.</p>
+            <a href="https://github.com/romi103" target="_blank"><i class="fa fa-github fa-2x social-icon"></i></a>
+            <a href="https://www.linkedin.com/in/roman-lorent-80b70359/" target="_blank"><i class="fa fa-linkedin-square fa-2x social-icon"></i></a>
+        </div>
+
+
+    </div>
+
+    <div class="container" id="projects">
+        <div class="section-header">
+            <h1>My Projects</h1>
+            <h3 class="subtext">Take a look at my other projects</h3>
+        </div>
+
+        <div id="list-projects">
+
+        </div>
+
+        <script id="entry-template" type="text/x-handlebars-template">
+            <div class="entry">
+                <ul style="list-style: none;">
+                    {{#each this}}
+                    <li>
+                        <a href="{{link}}">{{name}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+
+
+    </div>
+    <div class="container-fluid" id="contact-wraper">
+        <div class="col-md-12">
+            <div class="row main">
+                <div class="col-md-6 col-md-offset-3 contact">
+                    <div class="section-header">
+                        <h1>Contact</h1>
+                    </div>
+                    <div id="alert_box" class="alert-danger">
+                        <p></p>
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="custom-input" name="email" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="custom-input" id="inputName" placeholder="Name" name="name">
+                        </div>
+                        <textarea class="form-group custom-textarea" rows="10" placeholder="Your message" name="message"></textarea>
+                        <button class="center-block send-button" id="button">SEND <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wraper">
+        <div class="container footer">
+            <div class="col-md-4 footer-box" id="copy-right">
+                <p>Copyright<i class="fa fa-copyright"></i> Roman Lorent 2017</p>
+            </div>
+            <div class="col-md-8 footer-box" id="social">
+                <a href="https://github.com/romi103" target="_blank"><i class="fa fa-github fa-3x social-icon"></i></a>
+                <a href="https://www.linkedin.com/in/roman-lorent-80b70359/" target="_blank"><i class="fa fa-linkedin-square fa-3x social-icon"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/archive.js"></script>
+    <script src="js/email.js"></script>
+</body>
+
+</html>

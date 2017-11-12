@@ -1,0 +1,17 @@
+[
+    { "name": "Build a Random Quote Machine", "link": "http://codepen.io/romi103/pen/EVyErv" },
+    { "name": "Show the Local Weather", "link": "http://codepen.io/romi103/pen/pjrjre" },
+    { "name": "Build a Pomodoro Clock", "link": "projects/pomodore" },
+    { "name": "Use the Twitchtv JSON API", "link": "http://codepen.io/romi103/pen/MaRoYV" },
+    { "name": "Build a JavaScript Calculator", "link": "projects/calculator" },
+    { "name": "Build a Wikipedia Viewer", "link": "projects/wiki" },
+    { "name": "Build a Tic Tac Toe Game", "link": "projects/tictactoe" },
+    { "name": "Build a Simon Game", "link": "projects/simon" },
+    { "name": "Timestamp Microservice", "link": "https://timestamp-microse.herokuapp.com/" },
+    { "name": "Request Header Parser Microservice", "link": "https://request-header-parser-rl.herokuapp.com/" },
+    { "name": "URL Shortener Microservice", "link": "https://url-shortenere.herokuapp.com/" },
+    { "name": "Build a Voting App", "link": "https://voting-application-fcc.herokuapp.com/" },
+    { "name": "Build a Nightlife Coordination App", "link": "https://night-life-app.herokuapp.com/" },
+    { "name": "Build a Markdown Previewer", "link": "http://markdown-previewer-fcc.herokuapp.com/" },
+    { "name": "Build a Recipe Box", "link": "http://recipe-box-fcc.herokuapp.com/" }
+]
